@@ -1,0 +1,183 @@
+:root {
+  --white: #fff;
+  --black: #222;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--white);
+}
+body {
+  background-color: var(--black);
+}
+header {
+  background-image: url('../images/header.jpg');
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+}
+header>div {
+  padding: 1rem;
+  padding-bottom: 5rem;
+  background-color: #222a;
+}
+header a {
+  text-transform: uppercase;
+  margin-top: .5rem;
+  text-decoration: none;
+  padding: .5rem;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.active {
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 10px;
+}
+.header__about {
+  margin-top: 6rem;
+  max-width: 680px;
+}
+.header__about p {
+  margin-top: 1rem;
+}
+.popular-tours {
+  margin-top: 2rem;
+}
+.popular-tours h2 {
+  text-align: center;
+}
+.card-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card {
+  width: 60%;
+  max-width: 250px;
+  border-radius: 5px;
+  height: 350px;
+  background-position: center;
+  margin-top: 3rem;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  transition: all ease .5s;
+}
+#washington {
+  background-image: url(../images/washington.jpg);
+}
+#seoul {
+  background-image: url(../images/seoul.jpg);
+}
+#barcelona {
+  background-image: url(../images/barcelona.jpg);
+}
+#stockholm {
+  background-image: url(../images/Stockholm.jpg);
+}
+.card__content {
+  width: 100%;
+  background-color: #222a;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__button {
+  text-decoration: none;
+  padding: .2rem .5rem;
+  border: 1px solid var(--black);
+}
+.card:hover {
+  transform: scale(1.2);
+  border: 1px solid var(--white);
+}
+.information {
+  margin-top: 4rem;
+}
+.information h3 {
+  text-align: center;
+}
+.information>div {
+  padding: 0 2rem;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+table, tr, td, th {
+  border: 1px solid var(--white);
+}
+table {
+  margin-top: 1rem;
+  max-width: 350px;
+}
+th {
+  text-align: center;
+}
+footer {
+  margin-top: 1rem;
+  border-top: 1px solid var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+footer form {
+  width: 100%;
+  max-width: 360px;
+}
+footer label {
+  display: block;
+}
+footer input {
+  color: var(--black);
+  width: 100%;
+}
+footer fieldset {
+  padding: .3rem;
+}
+footer form, footer h3{
+  margin-top: 1rem;
+}
+@media (min-width: 720px) {
+  .header__navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav {
+    flex-direction: row;
+    width: 500px;
+    justify-content: flex-end;
+    margin: 0;
+  }
+  header a {
+    margin: 0;
+  }
+
+  .information>div {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  footer label {
+    display: inline;
+  }
+  footer input {
+    width: 100px;
+  }
+  footer form, footer h3{
+    margin: 0;
+  }
+}
